@@ -74,7 +74,7 @@
     </header>
 
     <section id="servicios" data-nav="theme-dark">
-        <h2 class="section-title reveal">Nuestras Soluciones Core</h2>
+        <h2 class="section-title reveal">Nuestros Servicios</h2>
 
         <div class="swiper-container-wrapper reveal">
             <div class="swiper mySwiper">
@@ -153,6 +153,24 @@
         </div>
     </section>
 
+    <section id="proyectos" data-nav="theme-dark">
+        <div class="projects-container reveal">
+            <div class="projects-content">
+                <div class="projects-text-box">
+                    <h2 class="section-title-left">Conoce nuestros proyectos más destacados</h2>
+                    <p class="projects-subtitle">Nuestros proyectos más destacados e importantes</p>
+                    <div class="projects-btn-wrapper">
+                        <a href="#" class="btn-primary">Conócelos</a>
+                    </div>
+                </div>
+                <div class="projects-image-box">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800"
+                        alt="Proyecto Destacado TechEngineers" class="project-featured-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="stack" class="reveal">
         <h2 class="section-title">Tecnologías que dominamos</h2>
         <div class="brands-slider">
@@ -175,6 +193,91 @@
         </div>
     </section>
 
+<section id="nosotros" data-nav="theme-dark">
+    <h2 class="section-title reveal">Conoce a Nuestro Equipo</h2>
+    
+    <div class="swiper-container-wrapper team-wrapper reveal">
+        <div class="swiper teamSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <article class="offer-card">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800" class="card-img" alt="Johan">
+                        </div>
+                        <div class="card-info">
+                            <h3>Johan</h3>
+                            <p class="card-description">Ingeniero de Software especializado en Front-End y arquitectura de soluciones digitales robustas.</p>
+                            <a href="perfil-johan.html" class="btn-secondary">Conoce más</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="offer-card">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800" class="card-img" alt="Christian">
+                        </div>
+                        <div class="card-info">
+                            <h3>Christian</h3>
+                            <p class="card-description">Especialista en Unity, Clean Architecture y desarrollo de sistemas interactivos a medida.</p>
+                            <a href="perfil-christian.html" class="btn-secondary">Conoce más</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="offer-card">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=800" class="card-img" alt="Mateo">
+                        </div>
+                        <div class="card-info">
+                            <h3>Mateo</h3>
+                            <p class="card-description">Experto en Cloud Computing (Azure/AWS) y despliegue de infraestructuras escalables.</p>
+                            <a href="perfil-mateo.html" class="btn-secondary">Conoce más</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="offer-card">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800" class="card-img" alt="Andrés">
+                        </div>
+                        <div class="card-info">
+                            <h3>Andrés</h3>
+                            <p class="card-description">Desarrollador Full Stack con enfoque en bases de datos relacionales e integración de servicios.</p>
+                            <a href="perfil-andres.html" class="btn-secondary">Conoce más</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="offer-card">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800" class="card-img" alt="Santi">
+                        </div>
+                        <div class="card-info">
+                            <h3>Santi</h3>
+                            <p class="card-description">Ingeniero DevOps enfocado en la automatización de procesos y optimización de flujos de trabajo.</p>
+                            <a href="perfil-santi.html" class="btn-secondary">Conoce más</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="offer-card">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800" class="card-img" alt="Luis">
+                        </div>
+                        <div class="card-info">
+                            <h3>Luis</h3>
+                            <p class="card-description">Especialista en UI/UX Design y personalización avanzada de interfaces de usuario.</p>
+                            <a href="perfil-luis.html" class="btn-secondary">Conoce más</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next team-next"></div>
+        <div class="swiper-button-prev team-prev"></div>
+        <div class="swiper-pagination team-pagination"></div>
+    </div>
+</section>
     <footer id="contacto" data-nav="theme-dark">
         <div class="footer-container">
             <div class="footer-grid">
@@ -288,6 +391,43 @@
         // Efecto scroll en Navbar
         window.addEventListener('scroll', () => {
             nav.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        var teamSwiper = new Swiper(".teamSwiper", {
+            slidesPerView: 3,
+            slidesPerGroup: 3, // Esto mueve 3 tarjetas a la vez
+            spaceBetween: 30,
+            loop: true,
+            grabCursor: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".team-pagination",
+                clickable: true
+            },
+            navigation: {
+                nextEl: ".team-next",
+                prevEl: ".team-prev"
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    slidesPerGroup: 1,
+                    spaceBetween: 10
+                },
+                768: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                    spaceBetween: 20
+                },
+                1024: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                    spaceBetween: 30
+                }
+            }
         });
     </script>
 
