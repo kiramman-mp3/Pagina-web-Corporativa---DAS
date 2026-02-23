@@ -648,8 +648,9 @@ footer {
 .brands-track {
     display: flex;
     align-items: center;
-    width: calc(150px * 14);
-    animation: scroll-tech 25s linear infinite;
+    gap: 10px;
+    animation: scroll-tech 10s linear infinite;
+    width: max-content;
 }
 
 .brands-track i {
@@ -751,7 +752,7 @@ footer {
     }
 
     100% {
-        transform: translateX(calc(-150px * 7));
+        transform: translateX(-50%);
     }
 }
 
