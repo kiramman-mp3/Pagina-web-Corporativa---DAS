@@ -1,5 +1,4 @@
 :root {
-    /* Paleta Tech: Azul Eléctrico y Slate */
     --primary: #2563eb;
     --primary-hover: #1d4ed8;
     --dark: #0f172a;
@@ -26,7 +25,6 @@ body {
     overflow-x: hidden;
 }
 
-/* --- NAVBAR --- */
 .navbar {
     position: fixed;
     top: 0;
@@ -54,7 +52,6 @@ body {
     letter-spacing: 4px;
     font-weight: 700;
     color: var(--primary);
-    /* Cambiado de blanco a primary para mejor visibilidad */
 }
 
 .logo-main {
@@ -77,7 +74,6 @@ body {
     position: relative;
 }
 
-/* Efecto hover moderno para ingenieros */
 .nav-links a::after {
     content: '';
     position: absolute;
@@ -109,7 +105,6 @@ body {
     transition: var(--transition);
 }
 
-/* Temas de navegación */
 .theme-light .nav-links a,
 .theme-light .logo-main,
 .theme-light .menu-toggle {
@@ -135,7 +130,6 @@ body {
     color: var(--dark);
 }
 
-/* --- WHATSAPP --- */
 .whatsapp-btn {
     position: fixed;
     bottom: 30px;
@@ -159,10 +153,11 @@ body {
     transform: scale(1.1) rotate(10deg);
 }
 
-/* --- SECCIÓN SERVICIOS (Antes Ofertas) --- */
 #servicios {
-    padding: 120px 5%;
+    padding: 120px 0;
     background: #ffffff;
+    position: relative;
+    overflow: hidden;
 }
 
 .section-title {
@@ -217,13 +212,11 @@ body {
     border-radius: 6px;
 }
 
-/* --- HERO --- */
 .hero {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* Overlay más oscuro para un look de software moderno */
     background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.7) 100%),
         url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop');
     background-size: cover;
@@ -232,13 +225,12 @@ body {
     text-align: center;
 }
 
-/* Añade esto a tu CSS para un control más preciso */
-.hero-content p+div {
-    margin-top: 4.5rem !important;
-    /* Ajusta este valor a tu gusto */
+.hero-content h1 {
+    font-size: clamp(3rem, 8vw, 5.5rem);
+    font-weight: 800;
+    max-width: 1000px;
 }
 
-/* También podemos mejorar el interlineado del párrafo para que no se vea tan apretado */
 .hero-content p {
     line-height: 1.8;
     margin-top: 1.5rem;
@@ -247,10 +239,8 @@ body {
     margin-right: auto;
 }
 
-.hero-content h1 {
-    font-size: clamp(3rem, 8vw, 5.5rem);
-    font-weight: 800;
-    max-width: 1000px;
+.hero-content p+div {
+    margin-top: 4.5rem !important;
 }
 
 .btn-primary {
@@ -271,7 +261,93 @@ body {
     box-shadow: 0 15px 30px rgba(37, 99, 235, 0.4);
 }
 
-/* --- SLIDER TECNOLOGÍAS --- */
+.swiper {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 60px !important;
+}
+
+.swiper-container-wrapper {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: var(--primary) !important;
+    width: 55px !important;
+    height: 55px !important;
+    border-radius: 50% !important;
+    color: white !important;
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3);
+    transition: var(--transition);
+    top: 50% !important;
+    margin-top: -45px !important;
+    z-index: 20;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 1.2rem !important;
+    font-weight: 800;
+}
+
+.swiper-button-next {
+    right: 10px !important; /* Pegado al borde del wrapper de 80px */
+}
+
+.swiper-button-prev {
+    left: 10px !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: var(--primary-hover) !important;
+    transform: scale(1.1);
+}
+
+.swiper-pagination {
+    bottom: 0 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--primary) !important;
+    width: 25px;
+    border-radius: 5px;
+}
+
+.swiper-pagination {
+    bottom: 15px !important;
+}
+
+@media (max-width: 1250px) {
+    .swiper {
+        max-width: 85%;
+    }
+
+    .swiper-button-next {
+        right: -10px;
+    }
+
+    .swiper-button-prev {
+        left: -10px;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+
+    .swiper {
+        max-width: 100%;
+    }
+}
+
 #stack {
     padding: 100px 0;
     background: #f8fafc;
@@ -288,11 +364,8 @@ body {
     transform: scale(1.2);
 }
 
-/* --- FOOTER --- */
-/* --- FOOTER REFINADO --- */
 footer {
     background: #0f172a;
-    /* Color oscuro profundo */
     padding: 100px 0 40px;
     color: #f8fafc;
 }
@@ -306,12 +379,10 @@ footer {
 .footer-grid {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
-    /* Proporción equilibrada */
     gap: 80px;
     align-items: flex-start;
 }
 
-/* Información de Contacto */
 .contact-title {
     font-size: 3rem;
     font-weight: 800;
@@ -339,7 +410,6 @@ footer {
     width: 50px;
     height: 50px;
     background: rgba(37, 99, 235, 0.1);
-    /* Azul sutil */
     color: var(--primary);
     display: flex;
     align-items: center;
@@ -369,29 +439,21 @@ footer {
     max-width: 450px;
 }
 
-/* Mapa Estilizado */
 .map-container {
     width: 100%;
     height: 450px;
     border-radius: 30px;
     overflow: hidden;
-    /* Sombra sutil para que resalte sobre el fondo oscuro */
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
     border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .map-container iframe {
-    /* Hemos eliminado los filtros de escala de grises e inversión */
     filter: none;
     transition: var(--transition);
     display: block;
 }
 
-.map-container:hover iframe {
-    filter: grayscale(0) invert(0) contrast(1);
-}
-
-/* Footer Inferior */
 .footer-bottom {
     margin-top: 80px;
     padding-top: 30px;
@@ -401,7 +463,6 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Ajuste para móviles */
 @media (max-width: 992px) {
     .footer-grid {
         grid-template-columns: 1fr;
@@ -424,7 +485,6 @@ footer {
     }
 }
 
-/* REVEAL ANIMATION */
 .reveal {
     opacity: 0;
     transform: translateY(30px);
@@ -436,7 +496,6 @@ footer {
     transform: translateY(0);
 }
 
-/* --- INFINITE TECH SLIDER --- */
 #stack {
     padding: 80px 0;
     background: white;
@@ -448,7 +507,6 @@ footer {
     overflow: hidden;
     position: relative;
     padding: 40px 0;
-    /* Degradado en los bordes para un efecto de desvanecimiento elegante */
 }
 
 .brands-slider::before,
@@ -476,7 +534,6 @@ footer {
 .brands-track {
     display: flex;
     align-items: center;
-    /* El ancho debe ser lo suficientemente grande para contener ambos bloques */
     width: calc(150px * 14);
     animation: scroll-tech 25s linear infinite;
 }
@@ -486,7 +543,6 @@ footer {
     display: flex;
     justify-content: center;
     color: #64748b;
-    /* Color slate corporativo */
     transition: all 0.3s ease;
     filter: grayscale(100%);
 }
@@ -503,12 +559,10 @@ footer {
     }
 
     100% {
-        /* Se desplaza exactamente la mitad del ancho total del track */
         transform: translateX(calc(-150px * 7));
     }
 }
 
-/* Pausar al pasar el mouse para que el usuario pueda ver una tecnología */
 .brands-slider:hover .brands-track {
     animation-play-state: paused;
 }
@@ -521,5 +575,24 @@ footer {
 
     .logo-main {
         color: white !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .swiper-container-wrapper {
+        padding: 0 60px;
+    }
+    .swiper-button-next { right: 5px; }
+    .swiper-button-prev { left: 5px; }
+}
+
+@media (max-width: 900px) {
+    /* En tablets/móviles las flechas suelen estorbar, mejor dejar solo el swipe */
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none !important;
+    }
+    .swiper-container-wrapper {
+        padding: 0 20px;
     }
 }

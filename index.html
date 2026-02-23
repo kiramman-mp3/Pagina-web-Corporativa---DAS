@@ -14,7 +14,6 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -22,33 +21,21 @@
     <link rel="stylesheet" href="estilos.css">
 
     <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "TechEngineers Software",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Distrito Tecnológico",
-      "addressLocality": "Quito",
-      "addressCountry": "EC"
-    },
-    "telephone": "+593999999999",
-    "serviceType": "Software Development",
-    "openingHours": "Mo-Fr 09:00-18:00"
-  }
-  </script>
-
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Ajuste rápido de colores para ambiente corporativo tech */
-        :root {
-            --primary: #2563eb;
-            --dark: #0f172a;
-        }
-    </style>
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "TechEngineers Software",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Distrito Tecnológico",
+            "addressLocality": "Quito",
+            "addressCountry": "EC"
+        },
+        "telephone": "+593999999999",
+        "serviceType": "Software Development",
+        "openingHours": "Mo-Fr 09:00-18:00"
+    }
+    </script>
 </head>
 
 <body>
@@ -77,10 +64,10 @@
             <h1 class="reveal">
                 Ingeniería de software que impulsa tu <span class="highlight">crecimiento</span>
             </h1>
-            <p class="reveal" style="transition-delay: 0.2s;">
+            <p class="reveal">
                 Construimos soluciones digitales robustas, escalables y centradas en el usuario para empresas globales.
             </p>
-            <div class="reveal" style="margin-top: 2rem; transition-delay: 0.4s;">
+            <div class="reveal reveal-btn">
                 <a href="#contacto" class="btn-primary">Hablemos de tu proyecto</a>
             </div>
         </div>
@@ -89,81 +76,75 @@
     <section id="servicios" data-nav="theme-dark">
         <h2 class="section-title reveal">Nuestras Soluciones Core</h2>
 
-        <div class="swiper mySwiper reveal">
-            <div class="swiper-wrapper">
+        <div class="swiper-container-wrapper reveal">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
 
-                <div class="swiper-slide">
-                    <article class="offer-card">
-                        <div class="card-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=600" class="card-img"
-                                loading="lazy" alt="Desarrollo Web Full Stack">
-                        </div>
-                        <div class="card-info">
-                            <h3>Desarrollo Web Custom</h3>
-                            <p class="card-description">
-                                Aplicaciones web de alto rendimiento utilizando React, Angular o Vue.
-                            </p>
-                            <div class="price-container">
-                                <span class="price-new">SaaS & Portales</span>
+                    <div class="swiper-slide">
+                        <article class="offer-card">
+                            <div class="card-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=600"
+                                    class="card-img" loading="lazy" alt="Desarrollo Web Full Stack">
                             </div>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="swiper-slide">
-                    <article class="offer-card">
-                        <div class="card-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600"
-                                class="card-img" loading="lazy" alt="Desarrollo de Apps Móviles">
-                        </div>
-                        <div class="card-info">
-                            <h3>Mobile Apps</h3>
-                            <p class="card-description">
-                                Experiencias nativas e híbridas para iOS y Android con Flutter y React Native.
-                            </p>
-                            <div class="price-container">
-                                <span class="price-new">iOS & Android</span>
+                            <div class="card-info">
+                                <h3>Desarrollo Web Custom</h3>
+                                <p>Aplicaciones web de alto rendimiento utilizando React, Angular o Vue.</p>
+                                <div class="price-container">
+                                    <span class="price-new">SaaS & Portales</span>
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                </div>
+                        </article>
+                    </div>
 
-                <div class="swiper-slide">
-                    <article class="offer-card">
-                        <div class="card-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc51?w=600" class="card-img"
-                                loading="lazy" alt="Arquitectura Cloud y DevOps">
-                        </div>
-                        <div class="card-info">
-                            <h3>Cloud & DevOps</h3>
-                            <p class="card-description">
-                                Infraestructura escalable en AWS y Azure con despliegue continuo.
-                            </p>
-                            <div class="price-container">
-                                <span class="price-new">Escalabilidad</span>
+                    <div class="swiper-slide">
+                        <article class="offer-card">
+                            <div class="card-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600"
+                                    class="card-img" loading="lazy" alt="Desarrollo de Apps Móviles">
                             </div>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="swiper-slide">
-                    <article class="offer-card">
-                        <div class="card-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600" class="card-img"
-                                loading="lazy" alt="Inteligencia Artificial aplicada">
-                        </div>
-                        <div class="card-info">
-                            <h3>IA & Data Science</h3>
-                            <p class="card-description">
-                                Implementación de modelos de lenguaje y análisis predictivo de datos.
-                            </p>
-                            <div class="price-container">
-                                <span class="price-new">Innovación</span>
+                            <div class="card-info">
+                                <h3>Mobile Apps</h3>
+                                <p>Experiencias nativas e híbridas para iOS y Android con Flutter y React Native.</p>
+                                <div class="price-container">
+                                    <span class="price-new">iOS & Android</span>
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                </div>
+                        </article>
+                    </div>
 
+                    <div class="swiper-slide">
+                        <article class="offer-card">
+                            <div class="card-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc51?w=600"
+                                    class="card-img" loading="lazy" alt="Arquitectura Cloud y DevOps">
+                            </div>
+                            <div class="card-info">
+                                <h3>Cloud & DevOps</h3>
+                                <p>Infraestructura escalable en AWS y Azure con despliegue continuo.</p>
+                                <div class="price-container">
+                                    <span class="price-new">Escalabilidad</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <article class="offer-card">
+                            <div class="card-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600"
+                                    class="card-img" loading="lazy" alt="Inteligencia Artificial aplicada">
+                            </div>
+                            <div class="card-info">
+                                <h3>IA & Data Science</h3>
+                                <p>Implementación de modelos de lenguaje y análisis predictivo de datos.</p>
+                                <div class="price-container">
+                                    <span class="price-new">Innovación</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
             </div>
 
             <div class="swiper-button-next"></div>
@@ -183,7 +164,6 @@
                 <i class="fab fa-docker fa-4x"></i>
                 <i class="fab fa-js fa-4x"></i>
                 <i class="fab fa-git-alt fa-4x"></i>
-
                 <i class="fab fa-react fa-4x"></i>
                 <i class="fab fa-node-js fa-4x"></i>
                 <i class="fab fa-python fa-4x"></i>
@@ -229,10 +209,10 @@
                     </p>
                 </div>
 
-                <div class="map-wrapper reveal" style="transition-delay:0.2s;">
+                <div class="map-wrapper reveal">
                     <div class="map-container">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15959.167098416847!2d-78.490000!3d-0.180000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a706f9e9d9d%3A0x6b8d8d8d8d8d8d8d!2sQuito!5e0!3m2!1ses!2sec!4v1700000000000!5m2!1ses!2sec"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15959.206536307185!2d-78.4891185!3d-0.1806532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a6fe40243d7%3A0x1d5f2a114b3d7b7e!2sQuito%2C%20Ecuador!5e0!3m2!1ses!2sec!4v1700000000000"
                             width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy">
                         </iframe>
                     </div>
@@ -248,21 +228,32 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
+        // Inicialización de Swiper
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 20,
+            slidesPerView: 3,
+            spaceBetween: 30,
             loop: true,
             grabCursor: true,
-            autoplay: { delay: 4000, disableOnInteraction: false },
-            pagination: { el: ".swiper-pagination", clickable: true },
-            navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
             breakpoints: {
-                640: { slidesPerView: 1.5 },
-                768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 }
+                320: { slidesPerView: 1, spaceBetween: 10 },
+                768: { slidesPerView: 2, spaceBetween: 20 },
+                1024: { slidesPerView: 3, spaceBetween: 30 }
             }
         });
 
+        // Lógica de navegación y animaciones
         const nav = document.getElementById('main-nav');
         const menuToggle = document.getElementById('menu-toggle');
         const navLinks = document.getElementById('nav-links');
@@ -273,6 +264,7 @@
             navLinks.classList.toggle('active');
         });
 
+        // Cambio de tema del Nav según sección
         const navObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -284,6 +276,7 @@
 
         sections.forEach(section => navObserver.observe(section));
 
+        // Animación al hacer scroll (Reveal)
         const revealObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) entry.target.classList.add('active');
@@ -292,6 +285,7 @@
 
         document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
+        // Efecto scroll en Navbar
         window.addEventListener('scroll', () => {
             nav.classList.toggle('scrolled', window.scrollY > 50);
         });
