@@ -5,41 +5,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- SEO -->
-    <title>Supermercado en Quero | Ofertas y Productos Frescos – Supermercado Karen</title>
+    <title>Expertos en Desarrollo de Software | Soluciones Digitales a Medida – TechEngineers</title>
     <meta name="description"
-        content="Supermercado Karen en Quero, Ecuador. Frutas frescas, carnes, lácteos y abarrotes con ofertas diarias. Calidad premium y atención local.">
+        content="Agencia de ingeniería de software especializada en desarrollo web, apps móviles y consultoría tecnológica. Transformamos ideas en productos digitales escalables.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://supermercadokaren.com/">
-    <meta name="theme-color" content="#dc2626">
+    <link rel="canonical" href="https://techengineers.com/">
+    <meta name="theme-color" content="#0f172a">
 
-    <!-- FUENTES -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
         rel="stylesheet">
 
-    <!-- ICONOS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- SWIPER -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <!-- CSS -->
     <link rel="stylesheet" href="estilos.css">
 
-    <!-- SEO LOCAL -->
     <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "GroceryStore",
-    "name": "Supermercado Karen",
+    "@type": "ProfessionalService",
+    "name": "TechEngineers Software",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Av. 17 de abril",
-      "addressLocality": "Quero",
+      "streetAddress": "Distrito Tecnológico",
+      "addressLocality": "Quito",
       "addressCountry": "EC"
     },
     "telephone": "+593999999999",
-    "openingHours": "Mo-Su 08:00-20:00"
+    "serviceType": "Software Development",
+    "openingHours": "Mo-Fr 09:00-18:00"
   }
   </script>
 
@@ -47,46 +42,52 @@
         html {
             scroll-behavior: smooth;
         }
+
+        /* Ajuste rápido de colores para ambiente corporativo tech */
+        :root {
+            --primary: #2563eb;
+            --dark: #0f172a;
+        }
     </style>
 </head>
 
 <body>
 
-    <!-- WHATSAPP -->
     <a href="https://wa.me/593999999999" class="whatsapp-btn" target="_blank"
-        aria-label="Contactar con Supermercado Karen por WhatsApp">
+        aria-label="Contactar con un asesor técnico por WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- NAV -->
     <nav class="navbar theme-light" id="main-nav">
         <a href="#" class="logo-container">
-            <span class="logo-top">Supermercado</span>
-            <span class="logo-main">KAREN</span>
+            <span class="logo-top">Tech</span>
+            <span class="logo-main">ENGINEERS</span>
         </a>
         <div class="menu-toggle" id="menu-toggle"><span></span><span></span><span></span></div>
         <div class="nav-links" id="nav-links">
-            <a href="#ofertas">Ofertas</a>
-            <a href="#categorias">Categorías</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#stack">Tecnologías</a>
             <a href="#contacto">Contacto</a>
         </div>
     </nav>
 
-    <!-- HERO -->
     <header id="inicio" class="hero" data-nav="theme-light">
         <div class="hero-content">
             <h1 class="reveal">
-                Supermercado en Quero, felicidad en cada <span class="highlight">compra</span>
+                Ingeniería de software que impulsa tu <span class="highlight">crecimiento</span>
             </h1>
             <p class="reveal" style="transition-delay: 0.2s;">
-                Los mejores productos frescos y marcas reconocidas en Quero, Ecuador.
+                Construimos soluciones digitales robustas, escalables y centradas en el usuario para empresas globales.
             </p>
+            <div class="reveal" style="margin-top: 2rem; transition-delay: 0.4s;">
+                <a href="#contacto" class="btn-primary">Hablemos de tu proyecto</a>
+            </div>
         </div>
     </header>
 
-    <!-- OFERTAS -->
-    <section id="ofertas" data-nav="theme-dark">
-        <h2 class="section-title reveal">Ofertas de hoy en Supermercado Karen</h2>
+    <section id="servicios" data-nav="theme-dark">
+        <h2 class="section-title reveal">Nuestras Soluciones Core</h2>
 
         <div class="swiper mySwiper reveal">
             <div class="swiper-wrapper">
@@ -94,19 +95,16 @@
                 <div class="swiper-slide">
                     <article class="offer-card">
                         <div class="card-img-wrapper">
-                            <span class="discount-badge">-20%</span>
-                            <img src="https://www.finedininglovers.es/sites/default/files/styles/1_1_768x768/public/article_content_images/tipos-de-frutas%C2%A9iStock.jpg.webp?itok=36_TMGbD"
-                                class="card-img" loading="lazy"
-                                alt="Frutas frescas orgánicas en Supermercado Karen de Quero">
+                            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=600" class="card-img"
+                                loading="lazy" alt="Desarrollo Web Full Stack">
                         </div>
                         <div class="card-info">
-                            <h3>Pack Frutas Orgánicas</h3>
+                            <h3>Desarrollo Web Custom</h3>
                             <p class="card-description">
-                                Selección premium de frutas locales cultivadas en Quero.
+                                Aplicaciones web de alto rendimiento utilizando React, Angular o Vue.
                             </p>
                             <div class="price-container">
-                                <span class="price-old">$5.60</span>
-                                <span class="price-new">$4.50</span>
+                                <span class="price-new">SaaS & Portales</span>
                             </div>
                         </div>
                     </article>
@@ -115,19 +113,16 @@
                 <div class="swiper-slide">
                     <article class="offer-card">
                         <div class="card-img-wrapper">
-                            <span class="discount-badge">-15%</span>
-                            <img src="https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=600"
-                                class="card-img" loading="lazy"
-                                alt="Corte de carne de res fresca en supermercado de Quero">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600"
+                                class="card-img" loading="lazy" alt="Desarrollo de Apps Móviles">
                         </div>
                         <div class="card-info">
-                            <h3>Corte Selección Res</h3>
+                            <h3>Mobile Apps</h3>
                             <p class="card-description">
-                                Corte de lomo fino ideal para parrilladas.
+                                Experiencias nativas e híbridas para iOS y Android con Flutter y React Native.
                             </p>
                             <div class="price-container">
-                                <span class="price-old">$10.50</span>
-                                <span class="price-new">$8.90</span>
+                                <span class="price-new">iOS & Android</span>
                             </div>
                         </div>
                     </article>
@@ -136,16 +131,16 @@
                 <div class="swiper-slide">
                     <article class="offer-card">
                         <div class="card-img-wrapper">
-                            <img src="https://ecolac.com.ec/img/cms/fotos/banner_vaca.jpg" class="card-img"
-                                loading="lazy" alt="Leche fresca pasteurizada de hacienda en Quero">
+                            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc51?w=600" class="card-img"
+                                loading="lazy" alt="Arquitectura Cloud y DevOps">
                         </div>
                         <div class="card-info">
-                            <h3>Leche Fresca Hacienda</h3>
+                            <h3>Cloud & DevOps</h3>
                             <p class="card-description">
-                                Leche entera pasteurizada rica en nutrientes.
+                                Infraestructura escalable en AWS y Azure con despliegue continuo.
                             </p>
                             <div class="price-container">
-                                <span class="price-regular">$2.20</span>
+                                <span class="price-new">Escalabilidad</span>
                             </div>
                         </div>
                     </article>
@@ -154,18 +149,16 @@
                 <div class="swiper-slide">
                     <article class="offer-card">
                         <div class="card-img-wrapper">
-                            <span class="discount-badge">-30%</span>
-                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600" class="card-img"
-                                loading="lazy" alt="Ensaladas frescas listas para consumir en supermercado de Quero">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600" class="card-img"
+                                loading="lazy" alt="Inteligencia Artificial aplicada">
                         </div>
                         <div class="card-info">
-                            <h3>Bowl de Ensalada Mix</h3>
+                            <h3>IA & Data Science</h3>
                             <p class="card-description">
-                                Mezcla lista de lechugas hidropónicas y vegetales frescos.
+                                Implementación de modelos de lenguaje y análisis predictivo de datos.
                             </p>
                             <div class="price-container">
-                                <span class="price-old">$4.00</span>
-                                <span class="price-new">$2.80</span>
+                                <span class="price-new">Innovación</span>
                             </div>
                         </div>
                     </article>
@@ -179,55 +172,56 @@
         </div>
     </section>
 
-    <!-- MARCAS -->
-    <section id="marcas" class="reveal">
-        <h2 class="section-title" style="text-align:center;">
-            Marcas disponibles en nuestro supermercado
-        </h2>
-
+    <section id="stack" class="reveal">
+        <h2 class="section-title">Tecnologías que dominamos</h2>
         <div class="brands-slider">
             <div class="brands-track">
-                <img src="src/alpina.png" alt="Productos Alpina en Supermercado Karen" loading="lazy">
-                <img src="src/nestle.png" alt="Productos Nestlé en supermercado de Quero" loading="lazy">
-                <img src="src/colgate.png" alt="Colgate disponible en Supermercado Karen" loading="lazy">
-                <img src="src/girasol.png" alt="Aceites Girasol en supermercado de Quero" loading="lazy">
-                <img src="src/cocacola.png" alt="Coca Cola en Supermercado Karen" loading="lazy">
-                <img src="src/oreo.png" alt="Galletas Oreo disponibles en Quero" loading="lazy">
-                <img src="src/pyg.png" alt="Productos P&G en supermercado de Quero" loading="lazy">
-                <img src="src/unilever.png" alt="Productos Unilever en Supermercado Karen" loading="lazy">
+                <i class="fab fa-react fa-4x"></i>
+                <i class="fab fa-node-js fa-4x"></i>
+                <i class="fab fa-python fa-4x"></i>
+                <i class="fab fa-aws fa-4x"></i>
+                <i class="fab fa-docker fa-4x"></i>
+                <i class="fab fa-js fa-4x"></i>
+                <i class="fab fa-git-alt fa-4x"></i>
+
+                <i class="fab fa-react fa-4x"></i>
+                <i class="fab fa-node-js fa-4x"></i>
+                <i class="fab fa-python fa-4x"></i>
+                <i class="fab fa-aws fa-4x"></i>
+                <i class="fab fa-docker fa-4x"></i>
+                <i class="fab fa-js fa-4x"></i>
+                <i class="fab fa-git-alt fa-4x"></i>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer id="contacto" data-nav="theme-dark">
         <div class="footer-grid">
             <div class="reveal">
-                <h3 style="font-size:2.5rem;">Visítanos en Quero</h3>
-                <p><strong>📍 Dirección:</strong> Av. 17 de abril, Quero, Ecuador</p>
-                <p><strong>📞 Teléfono:</strong> +593 99 999 9999</p>
-                <p><strong>🕘 Horario:</strong> Lunes a Domingo de 08:00 a 20:00</p>
+                <h3 style="font-size:2.5rem;">Hablemos de código</h3>
+                <p><strong>📍 Oficina:</strong> Hub Tecnológico, Quito, Ecuador</p>
+                <p><strong>📞 Consultas:</strong> +593 99 999 9999</p>
+                <p><strong>📧 Email:</strong> hello@techengineers.com</p>
 
                 <p style="font-size:0.9rem; opacity:.8; max-width:500px;">
-                    Supermercado Karen es un supermercado local en Quero, Ecuador,
-                    especializado en productos frescos y marcas reconocidas.
+                    TechEngineers es una firma de consultoría y desarrollo dedicada a la excelencia técnica.
+                    Convertimos desafíos complejos en soluciones de software elegantes.
                 </p>
             </div>
 
             <div class="reveal" style="transition-delay:0.2s;">
                 <div class="map-container">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.2605658734!2d-78.6074!3d-1.3787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMjInNDMuMyJTIDc4wrAzNicyNi42Ilc!5e0!3m2!1ses!2sec!4v1650000000000"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15959.03038670535!2d-78.487!3d-0.18!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMTAnNDguMCJTIDc4wrAyOScxMy4yIlc!5e0!3m2!1ses!2sec!4v1620000000000!5m2!1ses!2sec"
                         width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy"></iframe>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                © 2026 Supermercado Karen. Calidad y frescura garantizada.
+                © 2026 TechEngineers Software. Elevando el estándar del desarrollo.
             </div>
     </footer>
 
-    <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
@@ -236,7 +230,7 @@
             spaceBetween: 20,
             loop: true,
             grabCursor: true,
-            autoplay: { delay: 3000, disableOnInteraction: false },
+            autoplay: { delay: 4000, disableOnInteraction: false },
             pagination: { el: ".swiper-pagination", clickable: true },
             navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
             breakpoints: {
