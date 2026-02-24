@@ -2,7 +2,7 @@
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
     // File Layout
-    // "rootDir": "./src",
+    "rootDir": "./src",
     "outDir": "./dist",
 
     // Environment Settings
@@ -46,7 +46,10 @@
     "removeComments": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "allowImportingTsExtensions": true
-  }
+    "noEmit": false,
+    "rewriteRelativeImportExtensions": true,
+    "allowImportingTsExtensions": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src"]
 }
