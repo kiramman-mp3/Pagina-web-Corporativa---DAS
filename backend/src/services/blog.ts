@@ -1,3 +1,4 @@
+import { BlogSchema } from "../infrastructure/validators/blog.ts";
 import { BlogModel } from "../model/blog.ts";
 
 interface BlogData {
@@ -11,16 +12,21 @@ export class BlogService {
     }
     static async getBlog(id: number) {
         const blog = await BlogModel.findById(id);
-        if (!!!blog) {
+        if (!blog) {
             throw new Error("Blog not found");
         }
         return blog;
     }
     static async createBlog(data: BlogData) {
-        const created = new BlogModel(0, new Date(), data.title, data.url, data.description)
-        return BlogModel.create(created);
+        const validated = BlogSchema.parse(data)
+        return BlogModel.create({
+            description: data.description,
+            title: data.title,
+            url: data.url
+        });
     }
     static async updateBlog(id: number, newData: BlogData) {
+        const validated = BlogSchema.parse(newData)
         const updated = await BlogModel.update(id, newData);
         if (!updated) {
             throw new Error("Blog not found");

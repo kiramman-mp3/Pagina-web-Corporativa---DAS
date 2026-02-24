@@ -1,13 +1,6 @@
 import prisma from "../repository/prisma.ts";
 
 export class BlogModel {
-    constructor(
-        public id: number,
-        public createdAt: Date,
-        public title: string,
-        public url: string,
-        public description: string
-    ) { }
     static async findAll() {
         return await prisma.blog.findMany()
     }
