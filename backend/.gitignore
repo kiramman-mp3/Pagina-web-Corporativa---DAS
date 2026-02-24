@@ -3,3 +3,4 @@ dist
 
 # Files
 .env
+/src/generated/prisma
